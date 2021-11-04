@@ -1,0 +1,85 @@
+p {
+    overflow: auto;
+}
+.innerDiv {
+    display: block;
+}
+
+#update {
+    border-radius: 5px;
+    background: PaleTurquoise;
+}
+#read {
+    border-radius: 5px;
+    background: PapayaWhip;
+}
+#create {
+    border-radius: 5px;
+    background: lightgreen;
+}
+
+/* 애니메이션 */
+@keyframes goToRightAni {
+    to {
+        left: 50%;
+    }
+}
+@keyframes turnToRight {
+    to {
+        transform: rotateY(-180deg);
+    }
+}
+
+/* 첫 번째 페이지 */
+.mainFirst {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    overflow: auto;
+}
+.mainCover {
+    text-align: center;
+    background-color: brown;
+    z-index: 1;
+    border: 7px solid black;
+    box-sizing: border-box;
+}
+.mainCover img {
+    width: 60%;
+    height: 70%;
+    object-fit: contain;
+}
+.mainPage1 {
+    text-align: center;
+    background: white;
+    border: 7px solid black;
+    box-sizing: border-box;
+    transform: rotateY(180deg);
+}
+
+/* 두 번째 페이지 */
+.mainSecond {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    overflow: auto;
+}
+.mainPage2 {
+    text-align: center;
+    background: white;
+    border: 7px solid black;
+    z-index: 1;
+    box-sizing: border-box;
+}
+.mainPage3 {
+    background: white;
+    border: 7px solid black;
+    box-sizing: border-box;
+    transform: rotateY(180deg);
+}

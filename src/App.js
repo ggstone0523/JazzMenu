@@ -1,25 +1,27 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import JazzMainMenu from './pages/JazzMainMenu';
+import JazzModifyRecurPage from './pages/JazzModifyRecurPage';
+import JazzModifyPage from './pages/JazzModifyPage';
+import JazzRecurPage from './pages/JazzRecurPage';
+import JazzCreateRecurPage from './pages/JazzCreateRecurPage';
+import JazzInterPage from './pages/JazzInterPage';
+import JazzMainBoard from './pages/JazzMainBoard';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+const App = () => {
+  return(
+    <Router>
+      <Switch>
+        <Route path="/" exact component={JazzMainMenu} />
+        <Route path="/JazzRecur/:id/:db" component={JazzRecurPage} />
+        <Route path="/JazzModify/:id/:page" component={JazzModifyPage} />
+        <Route path="/JazzModifyRecur/:id/:page/:db" component={JazzModifyRecurPage} />
+        <Route path="/JazzCreateRecur/:db" component={JazzCreateRecurPage} />
+        <Route path="/JazzInter" component={JazzInterPage} />
+
+        <Route path="/JazzMainBoard" component={JazzMainBoard} />
+      </Switch>
+    </Router>
   );
-}
+};
 
 export default App;
