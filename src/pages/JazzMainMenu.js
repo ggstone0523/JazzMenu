@@ -111,38 +111,38 @@ const JazzMainMenu = () => {
                     <h1>America Jazz</h1>
                 </div>
                 <div className="mainFirst mainPage1">
-                    <div className="InnerDiv genre">
-                        <h1>{mainTitleAndContent[2][0]}</h1>
-                        <p>{mainTitleAndContent[2][1]}</p>
-                        <button type="button" id="update" onClick={() => {goToRight2(3, 'U', '');}}>수정</button>
-                        <button type="button" id="read" onClick={() => {goToRight2(1, 'R', 'genre');}}>세부 내용 보기</button> 
-                        <button type="button" id="create" onClick={() => {goToRight2(1, 'C', 'genre');}}>세부 내용 추가</button> 
-                    </div>
-                    <div className="innerDiv region">
+                    <div className="InnerDiv">
                         <h1>{mainTitleAndContent[0][0]}</h1>
                         <p>{mainTitleAndContent[0][1]}</p>
-                        <button type="button" id="update" onClick={() => {goToRight2(1, 'U');}}>수정</button>
-                        <button type="button" id="read" onClick={() => {goToRight2(1, 'R', 'region');}}>세부 내용 보기</button>
-                        <button type="button" id="create" onClick={() => {goToRight2(1, 'C', 'region');}}>세부 내용 추가</button>   
+                        <button type="button" id="update" onClick={() => {goToRight2(1, 'U', '');}}>수정</button>
+                        <button type="button" id="read" onClick={() => {goToRight2(1, 'R', mainTitleAndContent[0][0]);}}>세부 내용 보기</button> 
+                        <button type="button" id="create" onClick={() => {goToRight2(1, 'C', mainTitleAndContent[0][0]);}}>세부 내용 추가</button> 
+                    </div>
+                    <div className="innerDiv">
+                        <h1>{mainTitleAndContent[1][0]}</h1>
+                        <p>{mainTitleAndContent[1][1]}</p>
+                        <button type="button" id="update" onClick={() => {goToRight2(2, 'U');}}>수정</button>
+                        <button type="button" id="read" onClick={() => {goToRight2(1, 'R', mainTitleAndContent[1][0]);}}>세부 내용 보기</button>
+                        <button type="button" id="create" onClick={() => {goToRight2(1, 'C', mainTitleAndContent[1][0]);}}>세부 내용 추가</button>   
                     </div>
                 </div>
             </div>
             
             <div style={cssBook2}>
                 <div className="mainSecond mainPage2">
-                    <div className="innerDiv character">
-                        <h1>{mainTitleAndContent[1][0]}</h1>
-                        <p>{mainTitleAndContent[1][1]}</p>
-                        <button type="button" id="update" onClick={() => {goToRight2(2, 'U');}}>수정</button>
-                        <button type="button" id="read" onClick={() => {goToRight2(1, 'R', 'character');}}>세부 내용 보기</button>
-                        <button type="button" id="create" onClick={() => {goToRight2(1, 'C', 'character');}}>세부 내용 추가</button> 
+                    <div className="innerDiv">
+                        <h1>{mainTitleAndContent[2][0]}</h1>
+                        <p>{mainTitleAndContent[2][1]}</p>
+                        <button type="button" id="update" onClick={() => {goToRight2(3, 'U');}}>수정</button>
+                        <button type="button" id="read" onClick={() => {goToRight2(1, 'R',  mainTitleAndContent[2][0]);}}>세부 내용 보기</button>
+                        <button type="button" id="create" onClick={() => {goToRight2(1, 'C',  mainTitleAndContent[2][0]);}}>세부 내용 추가</button> 
                     </div>
-                    <div className="innerDiv era">
+                    <div className="innerDiv">
                         <h1>{mainTitleAndContent[3][0]}</h1>
                         <p>{mainTitleAndContent[3][1]}</p> 
                         <button type="button" id="update" onClick={() => {goToRight2(4, 'U');}}>수정</button>
-                        <button type="button" id="read" onClick={() => {goToRight2(1, 'R', 'era');}}>세부 내용 보기</button>
-                        <button type="button" id="create" onClick={() => {goToRight2(1, 'C', 'era');}}>세부 내용 추가</button> 
+                        <button type="button" id="read" onClick={() => {goToRight2(1, 'R', mainTitleAndContent[3][0]);}}>세부 내용 보기</button>
+                        <button type="button" id="create" onClick={() => {goToRight2(1, 'C', mainTitleAndContent[3][0]);}}>세부 내용 추가</button> 
                     </div>
                 </div>
                 <div className="mainSecond mainPage3">

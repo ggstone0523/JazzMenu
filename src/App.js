@@ -5,7 +5,6 @@ import JazzModifyPage from './pages/JazzModifyPage';
 import JazzRecurPage from './pages/JazzRecurPage';
 import JazzCreateRecurPage from './pages/JazzCreateRecurPage';
 import JazzInterPage from './pages/JazzInterPage';
-import JazzMainBoard from './pages/JazzMainBoard';
 
 const App = () => {
   return(
@@ -17,8 +16,6 @@ const App = () => {
         <Route path="/JazzModifyRecur/:id/:page/:db" component={JazzModifyRecurPage} />
         <Route path="/JazzCreateRecur/:db" component={JazzCreateRecurPage} />
         <Route path="/JazzInter" component={JazzInterPage} />
-
-        <Route path="/JazzMainBoard" component={JazzMainBoard} />
       </Switch>
     </Router>
   );
